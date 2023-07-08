@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto:wght@100;300;400&display=swap');
+
+
+body {
+    background-color: #232323;
+    color: #fff;
+    font-family: "Roboto", 'sans-serif';
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.site-title {
+    text-shadow: #65A4BA 2px 0 10px;
+}
+
+.site-title:hover {
+    text-shadow: #FC0 2px 0 10px;
+    cursor:default;
+}
+
+.menu-image {
+    box-shadow: #65A4BA 2px 0 10px;
+}
+
+.map-container {
+    width: 50vw;
+    height: 100vh;
+
+}
+
+
