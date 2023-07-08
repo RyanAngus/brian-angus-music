@@ -1,10 +1,8 @@
 
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 
-
-const MapMarker = ({ icon }) => <div className="text-4xl text-blue-600 hover:scale-110">{icon}</div>;
 
 const Map = () => {
    
@@ -18,19 +16,14 @@ const Map = () => {
         </div>
 
     <div className="map-container">
-        <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API_KEY }}
-            defaultCenter={{ lat: 38.39646502277806, lng: -82.30722006156408 }} // Set the initial center coordinates
-            defaultZoom={15} // Set the initial zoom level
-        >
-
-        <MapMarker
-                lat={38.39646502277806}
-                lng={-82.30722006156408}
-                icon='☕'
-        />
-
-        </GoogleMapReact>
+    <StaticImage 
+        src="../../static/map.png" 
+        alt="image of map showing cafe location"
+        height={600}
+        width={600}
+        placeholder="blurred"
+        className="ml-4 rounded-xl hover:opacity-90"
+      />
       </div>
     
     </div>
@@ -39,5 +32,3 @@ const Map = () => {
 
 export default Map;
 
-
-// 38.39646502277806, -82.30722006156408
