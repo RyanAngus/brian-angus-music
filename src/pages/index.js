@@ -14,7 +14,7 @@ import Address from "../components/Address";
 
 const IndexPage = () => {
   return (
-    <div>
+    <div >
     <Nav />
     <main className="flex flex-col items-center justify-center mt-4">
     <StaticImage

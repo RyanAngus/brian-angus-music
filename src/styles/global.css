@@ -32,4 +32,38 @@ body {
 
 }
 
+@media (max-width: 1250px) {
+   .nav-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+   }
+
+   .menu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+   }
+
+   .site-title {
+    text-shadow: #65A4BA 2px 0 10px;
+    text-align: center;    
+}
+
+.site-title:hover {
+    text-shadow: #FC0 2px 0 10px;
+    cursor:default;
+    border: none;
+}
+
+.clifftop-logo {
+    min-width: 100px;
+}
+
+  }
+  
+
 

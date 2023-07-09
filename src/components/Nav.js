@@ -7,13 +7,13 @@ import '../styles/global.css';
 const Nav = () => {
   return (
 
-    <div className="flex items-center m-2">
+    <div className="nav-div flex items-center m-2">
       
       <StaticImage
             src="../images/clifftop-logo-blue.png"
             alt="site logo"
             style={{ maxWidth: '7%' }}
-            className="m-3 rounded-2xl hover:opacity-90"
+            className="clifftop-logo m-3 rounded-2xl hover:opacity-90"
           />
 
  

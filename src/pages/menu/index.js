@@ -15,7 +15,7 @@ const Menu = ({ data }) => {
         <h1>MENU:</h1>
       </div>
       
-      <div className="grid grid-cols-3">
+      <div className="menu-div grid grid-cols-3">
         {menuItems.map(({ node: menuItem }) => (
           <div className="m-4 flex flex-col items-center" key={menuItem.itemname}>
             <h1 className="m-4 font-bungee text-3xl" >{menuItem.itemname}</h1>
