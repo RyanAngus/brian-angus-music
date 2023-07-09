@@ -22,7 +22,7 @@ const Map = () => {
         height={600}
         width={600}
         placeholder="blurred"
-        className="ml-4 rounded-xl hover:opacity-90"
+        className="map flex justify-center rounded-xl hover:opacity-90"
       />
       </div>
     

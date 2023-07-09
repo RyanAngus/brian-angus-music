@@ -63,6 +63,14 @@ body {
     min-width: 100px;
 }
 
+.map {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    
+}
+
   }
   
 
