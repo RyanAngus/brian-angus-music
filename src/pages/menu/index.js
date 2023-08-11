@@ -6,6 +6,8 @@ import Footer from "../../components/Footer";
 const Menu = ({ data }) => {
   const menuItems = data.allDatoCmsMenuitem.edges;
 
+
+
  
   return (
     <div>
@@ -17,9 +19,9 @@ const Menu = ({ data }) => {
       
       <div className="menu-div grid grid-cols-3">
         {menuItems.map(({ node: menuItem }) => (
-          <div className="m-4 flex flex-col items-center" key={menuItem.itemname}>
-            <h1 className="m-4 font-bungee text-3xl" >{menuItem.itemname}</h1>
-            <img className="menu-image hover:opacity-90 m-4 rounded-2xl w-96 h-96" src={menuItem.menuitemimage.url} alt={menuItem.itemname} />
+          <div className="menu-div m-4 flex flex-col items-center"  key={menuItem.itemname}>
+            <h1 className="item-name m-4 font-bungee text-3xl" >{menuItem.itemname}</h1>
+            <img className="menu-image transform hover:scale-105 hover:opacity-95  m-4 rounded-2xl w-96 h-96" src={menuItem.menuitemimage.url} alt={menuItem.itemname} />
             <p className="m-4 max-w-xs text-lg" >{menuItem.itemdescriptionPrice}</p>
           
           </div>

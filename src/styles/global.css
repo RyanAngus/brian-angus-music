@@ -20,11 +20,26 @@ body {
 .site-title:hover {
     text-shadow: #FC0 2px 0 10px;
     cursor:default;
+    transition: all .5s ease;
 }
 
 .menu-image {
     box-shadow: #65A4BA 2px 0 10px;
-}
+  }
+
+  
+.item-name {
+    cursor: default;
+    border: none;
+  }
+  
+.item-name:hover {
+    
+    text-shadow: #FC0 2px 0 10px;
+    cursor:default;
+    transition: all .5s ease;
+  }
+    
 
 .map-container {
     width: 50vw;
