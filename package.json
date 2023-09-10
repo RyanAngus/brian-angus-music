@@ -1,8 +1,8 @@
 {
-  "name": "clifftop-coffee",
+  "name": "brian-angus-music",
   "version": "1.0.0",
   "private": true,
-  "description": "clifftop-coffee",
+  "description": "brian-angus-music",
   "author": "Ryan Angus",
   "keywords": [
     "gatsby"
@@ -25,7 +25,8 @@
     "google-map-react": "^2.2.1",
     "nuka-carousel": "^6.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",

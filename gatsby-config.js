@@ -6,11 +6,11 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: 'Clifftop Coffee',
+    title: 'Brian Angus',
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
