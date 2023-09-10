@@ -4,7 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer";
-
+import Hours from "../components/Hours";
+import Map from "../components/Map";
+import Address from "../components/Address";
 
 
 
@@ -12,66 +14,53 @@ import Footer from "../components/Footer";
 
 const IndexPage = () => {
   return (
-    <>
-    <div className="index-page" >
+    <div >
     <Nav />
-    
-    <main className="flex flex-col items-center justify-center">
-    
-    <h1 className="site-title ml-4 mt-2 font-thin text-white text-7xl border-transparent hover:border-white">
-          Brian Angus
-    </h1>
-
-
-
-    {/* <StaticImage
-            src="../../static/brian.jpeg"
-            alt="photo of man beside motorcycle"
-            width={800}
-            height={600}
+    <main className="flex flex-col items-center justify-center mt-4">
+    <StaticImage
+            src="../../static/cafe.jpg"
+            alt="cafe photo by Petr Sevcovic on Unsplash"
+            width={1200}
+            height={550}
             placeholder="blurred"
             className="mx-3 my-10 rounded-xl hover:opacity-90"
-    /> */}
+    />
 
+    <p className="mx-10 my-2 text-xl leading-relaxed">Clifftop Coffee is West Virginia's premier third-wave coffee shop. We
+      pride ourselves on creating delicious hand-crafted drinks and food. From organic,
+      freshly roasted coffee beans to locally sourced eats, there is something here that
+      will delight you.
+    </p>
 
-  
-
-
-    </main>
-
-    
-    </div>
-
-    <div className="bg-yellow-200">
-    <div className="carousel mx-auto py-10">
+  <div className="mx-10 my-10">
     <Carousel wrapAround="true" autoplay="true" >
       <StaticImage 
-        src="../../static/campguitar.jpeg" 
-        alt="people playing guitars"
+        src="../../static/espresso.jpg" 
+        alt="Photo by Arisa Chattasa on Unsplash"
         height={550}
         width={1200}
         placeholder="blurred"
         className="rounded-xl hover:opacity-90"
       />
       <StaticImage 
-        src="../../static/campstaffone.jpeg" 
-        alt="people pose for camp photo"
+        src="../../static/tea.jpg" 
+        alt="Photo by Matt Hoffman on Unsplash"
         height={550}
         width={1200}
         placeholder="blurred"
         className="rounded-xl hover:opacity-90"
       />
       <StaticImage 
-        src="../../static/campstafftwo.jpeg" 
-        alt="people pose for camp photo"
+        src="../../static/pastry.jpg" 
+        alt="Photo by Mink Mingle on Unsplash"
         height={550}
         width={1200}
         placeholder="blurred"
         className="rounded-xl hover:opacity-90"
       />
       <StaticImage 
-        src="../../static/brianhair.jpeg" 
-        alt="man with crazy hair"
+        src="../../static/pizza.jpg" 
+        alt="Photo by Ivan Torres on Unsplash"
         height={550}
         width={1200}
         placeholder="blurred"
@@ -79,11 +68,27 @@ const IndexPage = () => {
       />
     </Carousel>
   </div>
-    </div>
+
+    <Hours />
+
+
+    <Map />
+
+    <Address />
+
+    <StaticImage
+            src="../../static/roaster.jpg"
+            alt="Photo by Yanapi Senaud on Unsplash"
+            width={1000}
+            height={550}
+            placeholder="blurred"
+            className="mx-3 my-10 rounded-xl hover:opacity-90"
+    />
+
+    </main>
 
     <Footer />
-
-    </>
+    </div>
   )
 }
 
